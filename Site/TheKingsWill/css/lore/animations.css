@@ -1,0 +1,23 @@
+#overlay {
+    position: fixed;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-80%, -50%) scale(5);
+    z-index: 100;
+    transition: 0.5s ease-in-out
+}
+
+.leave {
+    /*top: 50% !important; 
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(0) !important;*/
+    opacity: 0;
+}
+
+.removeScroll{
+
+    overflow: hidden;
+
+}
+

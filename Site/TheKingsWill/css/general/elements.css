@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: bisque;
+}
+
+*{
+
+    cursor: url('../../resources/cursor.png') 24 5, auto;
+
+}
+
+*:active{
+
+    cursor: url('../../resources/cursor-click.png') 24 5, auto;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+.btn1{
+
+    display: inline-block;
+    border-radius: 10px;
+    border-width: 3px;
+    padding: 15px 20px;
+    transform: scale(1);
+    margin: auto;
+    transition: 0.8s cubic-bezier(0.26, 0, 0.04, 0.77);
+
+}
+
+.btn1:hover{
+
+    transform: scale(1.3);
+    word-spacing: 10px;
+
+}

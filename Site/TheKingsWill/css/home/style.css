@@ -1,0 +1,56 @@
+body {
+    position: relative;
+    background: url("https://wallpapers.com/downloads/high/dark-fantasy-wallpaper-a70sfsdgqegelsgh.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.597) 50%, rgb(0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+h1{
+
+    transition: 0.5s ease-in-out;
+
+}
+
+h1:hover{
+
+    word-spacing: 20px;
+    scale: 1.1;
+
+}
+
+button{
+
+    width: auto;
+    height: auto;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    padding: 0;
+
+}
