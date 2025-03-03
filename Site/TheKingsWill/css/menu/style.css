@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 5px;
+    margin-left: 50px;
 }
 .menu ul li {
     display: inline;
@@ -31,4 +32,17 @@
     background-color: #f6001917;
     border: #cb1515 2px solid;
     letter-spacing: 2px;
+}
+
+.menu ul li:last-child {
+
+    margin-left: auto;
+    background-color: #cb1515;
+
+}
+
+.menu ul li:last-child a:hover {
+
+    background-color: #981c1c;
+
 }

@@ -14,15 +14,21 @@
 
 <body>
 
-    <nav class="menu subtitle bold smallT noSelect">
+    <nav class="menu subtitle bold noSelect">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Catálogo</a></li>
+            <li><a>Home</a></li>
+            <li><a href="Catalogo/catalogo.php">Catálogo</a></li>
             <li><a href="#">Como Jogar</a></li>
-            <li><a href="Lore/lore.php">História</a></li>
+            <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>
+            <li><a href="Admin/menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
+
         </ul>
+        <img class="noSelect" src="../resources/Livro.png" id="overlay">
+        <div onclick="desativarTransicao()" id="overlayBackground"></div>
+        <script src="../js/transitions.js"></script>
     </nav>
+
 
     <div class="container">
         <h1 class="titleV bold dark-yellow Sred hugeT noSelect">The King's Will</h1>
@@ -30,11 +36,6 @@
             Era uma vez ...
         </button>
     </div>
-
-    <img class="noSelect" src="../resources/Livro.png" id="overlay">
-    <div id="overlayBackground"></div>
-
-    <script src="../js/transitions.js"></script>
 </body>
 
 </html>

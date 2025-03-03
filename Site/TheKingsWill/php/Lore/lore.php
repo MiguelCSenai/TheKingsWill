@@ -13,19 +13,21 @@
 </head>
 <body id="body" class="removeScroll">
 
-    <nav class="menu subtitle bold smallT noSelect">
+    <nav class="menu subtitle bold noSelect">
         <ul>
             <li><a href="../home.php">Home</a></li>
-            <li><a href="#">Catálogo</a></li>
+            <li><a href="../Catalogo/catalogo.php">Catálogo</a></li>
             <li><a href="#">Como Jogar</a></li>
-            <li><a href="">História</a></li>
+            <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>
+            <li><a href="../Admin/menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
+
         </ul>
     </nav>
 
     <div class="container">
 
-        <p class="red SdarkRed titleV bold bigT">The King's Will</p>
+        <p class="noSelect red SdarkRed titleV bold bigT">The King's Will</p>
 
         <p class="brown title regular smallT">
 
@@ -36,7 +38,7 @@
             até desertores.<br>
             Então a seguinte missão lhes é passada:
 
-            <p class="textV mediumT dark-brownBC mediumBS solid">"Vocês, párias, que atualmente não tem nada, e estão privados de sua liberdade por toda sua vida, e alguns já se encontram até no caminho da forca, 
+            <p class="textV bigT dark-brownBC mediumBS solid">"Vocês, párias, que atualmente não tem nada, e estão privados de sua liberdade por toda sua vida, e alguns já se encontram até no caminho da forca, 
                 tenho uma missão para vocês, e caso retornem com vida, terão sua liberdade, e quem sabe... até algumas glórias. <br>
                 A missão é a seguinte, vão até o centro do rio Suothrein, saberão que estão no lugar certo ao avistar uma enorme ponte, que nos 
                 liga a nossos inimigos de tanto tempo, dentro dessa ponte está escondido algo que só pode ser encontrado nessa época do ano,
