@@ -106,6 +106,7 @@ $conexao->close();
                     <option value="Lança">Lança</option>
                     <option value="Porrete">Porrete</option>
                     <option value="Adaga">Adaga</option>
+                    <option value="Garras">Garras</option>
                     <option value="Escudo">Escudo</option>
                     <option value="Foice">Foice</option>
                     <option value="Bastão">Bastão</option>
