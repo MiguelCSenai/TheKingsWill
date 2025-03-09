@@ -26,7 +26,7 @@
     <nav class="menu subtitle bold noSelect">
         <ul>    
             <li><a href="../home.php">Home</a></li>
-            <li><a href="#">Catálogo</a></li>
+            <li><a href="../Catalogo/catalogo.php">Catálogo</a></li>
             <li><a href="#">Como Jogar</a></li>
             <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>

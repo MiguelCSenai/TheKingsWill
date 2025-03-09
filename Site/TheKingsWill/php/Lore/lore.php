@@ -32,7 +32,7 @@
         <p class="brown title regular smallT">
 
             Em meio a uma guerra, é atingido um período muito crítico no territorio de batalha entre dois reinos. O equilibrio entre o mundo físico
-            e espiritual está totalmente quebrado, isso acontece de forma tradicional, durante o final do inverno, e caminhar por aí nessa epóca não é o mais recomendado... <br>
+            e espiritual está totalmente quebrado, isso acontece de forma tradicional, durante o final do inverno, e caminhar por aí nessa época não é o mais recomendado... <br>
             Mandar tropas para a linha de frente é literalmente descartar forças, então ambos os reinos aproveitam esse momento para se livrar de alguns 
             "trastes", prisioneiros, condenados a interminaveis e cruéis sentenças pelos mais diversos tipos de crime, seja indecencia em publico
             até desertores.<br>

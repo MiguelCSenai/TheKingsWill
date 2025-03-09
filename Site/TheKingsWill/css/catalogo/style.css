@@ -1,6 +1,6 @@
 .arma {
     padding: 15px;
-    margin: 10px;
+    margin: 20px 20px;
     color: #fff;
     border-radius: 10px;
     text-align: center;
@@ -95,7 +95,7 @@
 .arma.expandido .stats {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Ajuste esse valor conforme necessário */
+    gap: 20px;
 }
 
 .stats{
@@ -176,4 +176,12 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+}
+
+.container-armas{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }

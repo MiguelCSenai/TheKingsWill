@@ -21,14 +21,14 @@
             <li><a href="#">Como Jogar</a></li>
             <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>
-            <li><a href="menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
+            <li><a href="../Admin/menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
 
         </ul>
     </nav>
 
+    <h1 class="red subtitle mediumT SdarkRed">Armas</h1>
     <div class="container-armas">
 
-        <h1 class="red subtitle mediumT SdarkRed">Armas</h1>
 
     <?php
     include "../mysqlconecta.php";
