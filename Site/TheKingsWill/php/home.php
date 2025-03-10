@@ -26,7 +26,7 @@
         </ul>
         <img class="noSelect" src="../resources/Livro.png" id="overlay">
         <div onclick="desativarTransicao()" id="overlayBackground"></div>
-        <script src="../js/transitions.js"></script>
+        <script src="../js/General/transitions.js"></script>
     </nav>
 
 

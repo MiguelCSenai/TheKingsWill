@@ -75,7 +75,7 @@ $conexao->close();
         <ul>
             <li><a href="../home.php">Home</a></li>
             <li><a href="../Catalogo/catalogo.php">Catálogo</a></li>
-            <li><a href="#">Como Jogar</a></li>
+            <li><a href="../Wiki/wiki.php">Como Jogar</a></li>
             <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>
             <li><a href="menu.php"><?php if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
@@ -84,7 +84,7 @@ $conexao->close();
         <img class="noSelect" src="../../resources/Livro.png" id="overlay">
         <div onclick="desativarTransicao()" id="overlayBackground"></div>
 
-        <script src="../../js/transitions.js"></script>
+        <script src="../../js/General/transitions.js"></script>
 
     </nav>
 

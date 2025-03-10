@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../../css/general/elements.css">
     <link rel="stylesheet" href="../../css/wiki/style.css">
     <link rel="stylesheet" href="../../css/menu/style.css">
+    <link rel="stylesheet" href="../../css/home/animations.css">
+    <script src="../../js/Wiki/transitions.js"></script>
 </head>
 <body id="body" class="removeScroll">
 
@@ -22,33 +24,54 @@
             <li><a href="../Admin/menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
 
         </ul>
+        <img class="noSelect" src="../../resources/Livro.png" id="overlay">
+            <div onclick="desativarTransicao()" id="overlayBackground"></div>
+            <script src="../../js/General/transitions.js"></script>
     </nav>
 
-    <div class="container">
+    <div class="container dark-brownBT">
+        
+        <img class="roda noSelect" src="../../resources/roda.png" alt="Roda Elemental">
 
-        <p class="noSelect red SdarkRed titleV bold bigT">The King's Will</p>
+        <div class="text-container">
 
-        <p class="brown title regular smallT">
+            <p class="mediumT bold red SdarkRed subtitle">Vantagens elementais</p>
 
-            Em meio a uma guerra, é atingido um período muito crítico no territorio de batalha entre dois reinos. O equilibrio entre o mundo físico
-            e espiritual está totalmente quebrado, isso acontece de forma tradicional, durante o final do inverno, e caminhar por aí nessa época não é o mais recomendado... <br>
-            Mandar tropas para a linha de frente é literalmente descartar forças, então ambos os reinos aproveitam esse momento para se livrar de alguns 
-            "trastes", prisioneiros, condenados a interminaveis e cruéis sentenças pelos mais diversos tipos de crime, seja indecencia em publico
-            até desertores.<br>
-            Então a seguinte missão lhes é passada:
+            <p class="regular brown title">No universo de The King's Will, o fluxo da existência é governado por quatro grandes Naturezas: Ossos, Consciência, Sangue e Vísceras. Cada uma dessas forças interage de maneira cíclica, conferindo vantagens e desvantagens em combate.</p>
 
-            <p class="textV bigT dark-brownBC mediumBS solid">"Vocês, párias, que atualmente não tem nada, e estão privados de sua liberdade por toda sua vida, e alguns já se encontram até no caminho da forca, 
-                tenho uma missão para vocês, e caso retornem com vida, terão sua liberdade, e quem sabe... até algumas glórias. <br>
-                A missão é a seguinte, vão até o centro do rio Suothrein, saberão que estão no lugar certo ao avistar uma enorme ponte, que nos 
-                liga a nossos inimigos de tanto tempo, dentro dessa ponte está escondido algo que só pode ser encontrado nessa época do ano,
-                o <span class="red bold italic smallUL">Líquido da Vida</span>."</p>
+            <span class="smallT red SdarkRed subtitle">> Ossos > Consciência > Sangue > Vísceras ></span>
 
-        </p>
+            <button onclick="elemental()" class="btn2 dark-redBC redB white text bold">Sobre</button>
+
+        </div>
+        
+    </div>
+    
+    <div class="overlay">
+
+        <div onclick="elemental()" class="elemental-container">
+        
+            <img class="roda noSelect" src="../../resources/roda.png" alt="Roda Elemental">
+
+            <div class="text-container">
+
+                <span class="smallT red SdarkRed subtitle">> Ossos > Consciência > Sangue > Vísceras ></span>
+
+                <p class="regular brown title smallUL">
+                    Cada elemento é resistente a um, e vulneravel a outro.
+                </p>
+                
+                <p class="regular brown title">
+
+                    Logo uma arma de <span class="red bold">sangue</span> terá <span class="red">mais 2 pontos de dano</span> contra <span class="smallUL purple"> criaturas/player de vísceras</span> e uma criatura/player dessa natureza <span class="red">receberá 2 pontos de dano a menos</span> caso seja atacado por algo de <span class="purple bold">vísceras</span>, porém o efeito contrário acontecera contra criaturas de <span class="blue bold">consciência</span>.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-    <img class="noSelect" src="../../resources/Livro.png" id="overlay">
-    <div id="overlayBackground" class="activeBackground"></div>
 
 </body>
 </html>

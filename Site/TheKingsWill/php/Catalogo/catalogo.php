@@ -18,7 +18,7 @@
         <ul>
             <li><a href="../home.php">Home</a></li>
             <li><a>Catálogo</a></li>
-            <li><a href="#">Como Jogar</a></li>
+            <li><a href="../Wiki/wiki.php">Como Jogar</a></li>
             <li><a onclick="ativarTransicao()">História</a></li>
             <li><a href="#">Sobre nós</a></li>
             <li><a href="../Admin/menu.php"><?php session_start(); if (isset($_SESSION['admin'])) { echo $_SESSION['admin']; }else{ echo "Administrador"; } ?></a></li>
@@ -112,6 +112,6 @@
 
 </body>
 
-<script src="../../js/transitions.js"></script>
+<script src="../../js/General/transitions.js"></script>
 
 </html>

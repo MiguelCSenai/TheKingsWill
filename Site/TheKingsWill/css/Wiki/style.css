@@ -1,11 +1,15 @@
 .container{
 
-    padding: 20px 10px;
-    margin-inline: 20%;
+    border-radius: 5vw;
+    margin-inline: calc(15vw - 40px);
+    width: 70vw;
+    margin-top: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-
+    gap: 250px;
+    padding: 50px 40px;
+    background-color: #e3ba8c;
+    
 }
 
 .textV{
@@ -25,7 +29,92 @@ span{
 span:hover{
 
     word-spacing: 2px;
-    letter-spacing: 1px;
-    transform: scale(2);
+    transform: scale(1.5);
+
+}
+
+.roda{
+
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(10px 10px 10px #000000);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.roda:hover{
+
+    transform: scale(1.1);
+
+}
+button{
+
+    margin-top: 40px;
+
+}
+
+.elemental-container{
+
+    border-radius: 5vw;
+    width: 70vw;
+    display: none;
+    justify-content: space-around;
+    gap: 250px;
+    padding: 50px 40px;
+    background-color: #e3ba8c;
+
+}
+
+.elemental-container.expandido {
+    position: fixed;
+    opacity: 1;
+    animation: expandir 0.8s ease-in-out forwards;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #e3ba8c;
+    padding: 20px;
+}
+
+
+@keyframes expandir {
+    from {
+        opacity: 0;
+        transform: translate(0%, 150%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+
+.overlay{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.823);
+    backdrop-filter: grayscale(0.7);
+    backdrop-filter: blur(0px);
+    opacity: 0;
+    transition: 1s cubic-bezier(0.08, -0.12, 0, 0.94);
+    pointer-events: none;
+
+}
+
+.overlay.ativo{
+
+    backdrop-filter: blur(8px);
+    opacity: 1;
 
 }
