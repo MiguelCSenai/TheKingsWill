@@ -10,4 +10,3 @@ function elemental() {
         overlay.classList.add("ativo");
     }
 }
-

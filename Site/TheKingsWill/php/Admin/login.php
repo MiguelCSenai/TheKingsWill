@@ -66,7 +66,7 @@ $conexao->close();
                 <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit" class="text">Entrar</button>
         </form>
     </div>
 </body>

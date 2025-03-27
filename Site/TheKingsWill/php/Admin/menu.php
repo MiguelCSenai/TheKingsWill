@@ -44,7 +44,7 @@
 
             <a href="addAdmin.php" class="items redBC solid mediumBS black bold text smallT"><img src="../../resources/add.png">Adicionar Admin</a>
 
-            <a href="admCatalogo" class="items redBC solid mediumBS black bold text smallT"><img src="../../resources/settings.png">Cadastrar item</a>
+            <a class="items redBC solid mediumBS black bold text smallT"><img src="../../resources/settings.png">Cadastros</a>
 
         </div>
         
