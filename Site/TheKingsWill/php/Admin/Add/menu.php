@@ -43,6 +43,7 @@
         <div class="container-menu">
 
             <a href="addArma.php" class="items redBC solid mediumBS black bold text smallT"><img src="../../../resources/settings.png">Cadastrar arma</a>
+            <a href="addEfeito.php" class="items redBC solid mediumBS black bold text smallT"><img src="../../../resources/settings.png">Cadastrar efeito</a>
 
         </div>
         

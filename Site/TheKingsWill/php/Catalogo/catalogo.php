@@ -93,15 +93,54 @@
     } else {
         echo "<p>Nenhuma arma cadastrada.</p>";
     }
-
-    $conexao->close();
 ?>
 
 
 
-
-
     </div>
+
+    <h1 class="red subtitle mediumT SdarkRed">Efeitos</h1>
+<div class="container-efeitos">
+<?php
+
+$query = "SELECT eft_nome, eft_dpt, eft_ignoraArmadura, eft_incapacitar, eft_nerfDano, eft_nerfAgi, eft_buffDano, eft_buffAgi, eft_cura FROM efeitos ORDER BY eft_nome";
+$result = $conexao->query($query);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $countAtributos = 0;
+        foreach ($row as $key => $value) {
+            if ($key !== 'eft_nome' && !is_null($value)) {
+                $countAtributos++;
+            }
+        }
+
+        $classeCor = "";
+        if ($countAtributos >= 1) $classeCor = "comum";
+        if ($countAtributos >= 2) $classeCor = "bom";
+        if ($countAtributos >= 3) $classeCor = "otimo";
+
+        echo "<div class='efeito subtitle blackBC solid mediumBS $classeCor'>";
+        echo "<h2>" . $row["eft_nome"] . "</h2>";
+        echo "<ul>";
+        if (!is_null($row["eft_dpt"])) echo "<li><strong>Dano por turno:</strong> " . $row["eft_dpt"] . "</li>";
+        if (!is_null($row["eft_ignoraArmadura"])) echo "<li><strong>Ignora " . $row["eft_ignoraArmadura"] . " camada(s) de armadura</strong></li>";
+        if (!is_null($row["eft_incapacitar"])) echo "<li><strong>Incapacita o alvo por" . $row["eft_incapacitar"] . " turno(s) </strong> Sim</li>";
+        if (!is_null($row["eft_nerfDano"])) echo "<li><strong>Redução de dano:</strong> " . $row["eft_nerfDano"] . "</li>";
+        if (!is_null($row["eft_nerfAgi"])) echo "<li><strong>Redução de agilidade:</strong> " . $row["eft_nerfAgi"] . "</li>";
+        if (!is_null($row["eft_buffDano"])) echo "<li><strong>Aumento de dano:</strong> " . $row["eft_buffDano"] . "</li>";
+        if (!is_null($row["eft_buffAgi"])) echo "<li><strong>Aumento de agilidade:</strong> " . $row["eft_buffAgi"] . "</li>";
+        if (!is_null($row["eft_cura"])) echo "<li><strong>Cura:</strong> " . $row["eft_cura"] . "</li>";
+        echo "</ul>";
+        echo "</div>";
+    }
+} else {
+    echo "<p>Nenhum efeito cadastrado.</p>";
+}
+$conexao->close();
+?>
+
+</div>
 
     <div id="expandedContainer"></div>
     <div id="backgroundOverlay"></div>

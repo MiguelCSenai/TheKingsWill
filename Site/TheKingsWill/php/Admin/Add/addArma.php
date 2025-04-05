@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                   VALUES ('$nome', '$tipo', '$natureza', '$efeito', $dano, $velocidade, $alcance, '$descricao', '$icone')";
         
         if (mysqli_query($conexao, $query)) {
-            header("Location: admCatalogo.php");
+            header("Location: addArma.php");
             exit();
         } else {
             echo "<p>Erro ao adicionar arma: " . mysqli_error($conexao) . "</p>";

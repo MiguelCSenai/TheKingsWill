@@ -1,6 +1,13 @@
+body{
+
+    padding-bottom: 300px;
+
+}
+
 .arma {
     padding: 15px;
     margin: 20px 20px;
+    height: 430px;
     color: #fff;
     border-radius: 10px;
     text-align: center;
@@ -181,6 +188,68 @@
 .container-armas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
     justify-content: center;
+    max-height: calc(2 * 430px + 200px);
+    padding: 10px;
+}
+.container-efeitos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.efeito {
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 0;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    max-height: 200px;
+}
+
+.efeito:hover {
+    transform: scale(1.02);
+}
+
+.efeito h2 {
+    color: #fb0000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.efeito ul {
+    list-style: none;
+    padding: 0;
+}
+
+.efeito li {
+    font-size: 1em;
+        margin: 5px 0;
+        background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.comum{
+
+    background-color: #d1d1d1;
+
+}
+.bom{
+
+    background-color: #167dcc;
+
+}
+.otimo{
+
+    background-color: goldenrod;
+
 }
