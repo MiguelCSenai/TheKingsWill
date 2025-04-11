@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Luxurious+Script&family=Quicksand:wght@300..700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+.italic{
+
+    font-style: italic;
+
+}
+
+.regular {
+
+    font-weight: 400;
+
+}
+
+.bold {
+
+    font-weight: 700;
+
+}
+
+.smallT{
+
+    font-size: 1.5em;
+
+}
+
+.mediumT{
+
+    font-size: 2em;
+
+}
+
+.bigT{
+
+    font-size: 3em;
+
+}
+
+.hugeT{
+
+    font-size: 6em;
+
+}
+
+.noSelect{
+
+    user-select: none;
+
+}
+
+.smallUL{
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+
+}
+
+.mediumUL{
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+
+}
+
+.largeUL{
+  
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+
+}
+
+.subtitle {
+    font-family: "Arsenal SC", serif;
+    font-style: normal;
+  }
+
+  .title {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .titleV {
+    font-family: "Cinzel Decorative", serif;
+    font-style: normal;
+  }
+
+  .text {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .textV {
+    font-family: "Qwitcher Grypen", serif;
+    font-style: normal;
+
+  }
+
+  .textV2 {
+
+    font-family: "Luxurious Script", serif;
+    font-style: normal;
+
+  }

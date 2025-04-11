@@ -1,0 +1,81 @@
+body{
+
+    background: url("../../resources/img/players.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+form{
+
+    background: url("../../resources/img/pedra.png");
+    background-color: rgb(45, 44, 43);
+    background-size: cover;
+    background-blend-mode: hard-light;
+    padding: 5vh 5vw;
+    border-radius: 10px;
+    border: 4px rgb(23, 23, 23) solid;
+    height: 30vh;
+    min-height: calc(300px - (5vh * 2));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+label{
+
+    color: #ffae00;
+    text-shadow: 6px 6px 3px black;
+
+}
+
+.input-div{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+input{
+
+    width: 5vw;
+    aspect-ratio: 1/1.5;
+    background: grey;
+    border-radius: 5px;
+    border: 4px rgb(59, 59, 59) solid;
+    font-size: 4.5em;
+    text-align: center;
+    
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+button{
+
+    width: 25%;
+    color: rgb(207, 180, 57);
+    background: transparent;
+    border: none;
+
+
+}
+
+.continuar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin-top: 20px;
+    
+}

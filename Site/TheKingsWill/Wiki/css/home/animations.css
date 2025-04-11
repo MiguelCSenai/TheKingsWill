@@ -1,0 +1,44 @@
+#overlay {
+    position: fixed;
+    top: 100%; 
+    left: 50%;
+    transform: translate(-50%, -0%) scale(0.3);
+    z-index: 100;
+    transition: 2s cubic-bezier(0.08, -0.12, 0, 0.94);
+}
+
+#overlayBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.823);
+    backdrop-filter: grayscale(0.7);
+    backdrop-filter: blur(0px);
+    opacity: 0;
+    transition: 1s cubic-bezier(0.08, -0.12, 0, 0.94);
+    pointer-events: none;
+}
+
+#overlayBackground.activeBackground {
+
+    backdrop-filter: blur(8px);
+    opacity: 1;
+}
+
+#overlay.active {
+
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    
+    
+}
+
+#overlay.fadeOut{
+
+    transform: translate(-80%, -50%) scale(5);
+    transition: 0.75s cubic-bezier(0.8, 0.04, 1, 0.01);
+
+}
